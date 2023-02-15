@@ -1,0 +1,160 @@
+.topBanner {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.topBanner ul {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+  gap: 30px;
+  justify-content: flex-end;
+  line-height: 30px;
+  font-size: 13px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  background: #fff;
+  line-height: 100px;
+}
+
+header .inner {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  gap: 100px;
+}
+
+header .inner ul {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  line-height: 110px;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.mainVisual {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.mainVisual img {
+  border-radius: 0 0 30px 30px;
+}
+
+.mainVisual .progress_bar {
+  position: relative;
+  margin: -20px 0 0 60px;
+  width: 450px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 8px 24px rgb(0 0 0 / 8%);
+}
+.mainVisual .progress_bar .progress_bar_inner {
+  width: 400px;
+  display: flex;
+  gap: 30px;
+}
+
+.mainVisual .progress_bar .stop_start {
+  display: inline-block;
+  left: -200px;
+  bottom: 10px;
+}
+.mainVisual .progress_bar .stop_start ul {
+  display: flex;
+}
+.mainVisual .progress_bar .arrows {
+  display: flex;
+  left: 50px;
+  bottom: 0px;
+  gap: 30px;
+}
+.mainVisual .progress_bar .num {
+  position: absolute;
+  display: flex;
+  left: 200px;
+  gap: 180px;
+  bottom: 20px;
+}
+
+.sd02112 {
+  position: relative;
+  width: 130px;
+  left: 58px;
+  top: 7px;
+  height: 3px;
+  background: #ddd;
+}
+
+.sd02112 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: yellow;
+  width: 20%;
+  height: 100%;
+  transition: 0.2s;
+}
+
+.mainContent {
+  padding: 80px 0;
+}
+
+.mainContent .mainContent_inner {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.mainContent .mainContent_inner .left {
+  width: 300px;
+}
+
+.mainContent .mainContent_inner .content_slide {
+  width: 900px;
+  position: relative;
+}
+
+.mainContent .mainContent_inner .content_slide figure {
+  width: 180px;
+  border: 1px solid #ddd;
+}
+
+.mainContent .mainContent_inner .content_slide figure a {
+  width: 100%;
+}
+
+.mainContent .mainContent_inner .content_slide figure a img {
+  width: 100%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.mainContent .mainContent_inner .content_slide .first_itm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 900px;
+}
+
+.mainContent .mainContent_inner .content_slide .second_itm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 900px;
+}
