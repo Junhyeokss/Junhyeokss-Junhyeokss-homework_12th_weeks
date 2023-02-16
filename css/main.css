@@ -1,3 +1,16 @@
+@keyframes handling {
+  0% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(15px);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+}
+
 .topBanner {
   width: 1200px;
   display: flex;
@@ -103,7 +116,7 @@ header .inner ul {
   position: absolute;
   top: 0;
   left: 0;
-  background: yellow;
+  background: #f9bb00;
   width: 20%;
   height: 100%;
   transition: 0.2s;
@@ -117,10 +130,69 @@ header .inner ul {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  gap: 50px;
 }
 
 .mainContent .mainContent_inner .left {
-  width: 300px;
+  width: 250px;
+  line-height: 40px;
+}
+
+.mainContent .mainContent_inner .left li {
+  line-height: 50px;
+}
+
+.mainContent .mainContent_inner .left .one {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 10px;
+  padding: 5px 25px;
+  background: #f9bb00;
+  font-size: 20px;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+.mainContent .mainContent_inner .left .two {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 10px;
+  padding: 5px 25px;
+  background: #f9bb00;
+  font-size: 20px;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+.mainContent .mainContent_inner .left .three {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 10px;
+  padding: 5px 25px;
+  background: #f9bb00;
+  font-size: 20px;
+  color: #fff;
+}
+
+.mainContent .mainContent_inner .left h2 {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 0 0 15px 0;
+}
+.mainContent .mainContent_inner .left p {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 0 20px 0;
+}
+
+.mainContent .mainContent_inner .left p a {
+  background: #f9bb00;
+  border-radius: 10px;
+  padding: 3px;
 }
 
 .mainContent .mainContent_inner .content_slide {
@@ -129,8 +201,29 @@ header .inner ul {
 }
 
 .mainContent .mainContent_inner .content_slide figure {
-  width: 180px;
+  width: 190px;
   border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.mainContent .mainContent_inner .content_slide .img {
+  padding: 20px;
+  margin: 0 0 0 5px;
+  text-align: center;
+}
+
+.mainContent .mainContent_inner .content_slide .img h2 {
+  font-size: 13px;
+  word-break: keep-all;
+  padding: 10px 0 8px 0;
+}
+
+.mainContent .mainContent_inner .content_slide figure .top {
+  margin: 10px 10px 5px 100px;
+  padding: 4px 0;
+  font-size: 10px;
+  background: #f9bb00;
+  border-radius: 10px 10px 10px 0px;
 }
 
 .mainContent .mainContent_inner .content_slide figure a {
@@ -139,6 +232,7 @@ header .inner ul {
 
 .mainContent .mainContent_inner .content_slide figure a img {
   width: 100%;
+  padding: 5px;
 }
 
 .hidden {
@@ -157,4 +251,304 @@ header .inner ul {
   top: 0;
   left: 0;
   width: 900px;
+}
+
+.subContent {
+  padding: 100px 0;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.subContent .sub_slide {
+  display: flex;
+  gap: 30px;
+}
+
+.subContent .sub_slide figure {
+  box-shadow: 0px 8px 24px rgb(0 0 0 / 5%);
+  border-radius: 24px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  transition: transform 0.5s;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.subContent .sub_slide figure:hover {
+  box-shadow: 0px 8px 24px #f9bb00;
+}
+
+.subContent .sub_slide figure img {
+  border-radius: 24px;
+  transition: transform 0.5s;
+  margin: 0 0 20px 0;
+}
+
+.subContent .sub_slide figure:hover a:nth-child(1) img {
+  transform: scale(1.2);
+}
+
+.subContent h2 {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 0 0 20px 0;
+}
+
+.subContent p {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 0 15px 0;
+  color: #f9bb00;
+}
+
+.storeSection {
+  padding: 70px 0;
+  transform: translateX(175px);
+  background: linear-gradient(
+    90deg,
+    #fece6a 7.62%,
+    rgba(254, 207, 106, 0.591) 1280px,
+    #fff
+  );
+  width: 1550px;
+  margin: 0 auto;
+  border-radius: 24px;
+  overflow-x: hidden;
+}
+
+.storeSection h2 {
+  margin: 0 0 0 50px;
+  padding: 0 0 20px 0;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.storeSection p {
+  margin: 0 0 0 50px;
+  color: #fff;
+  font-weight: 600;
+  padding: 0 0 30px 0;
+}
+
+.storeSection .store_set {
+  width: 1200px;
+}
+
+.storeSection .store_set ul {
+  display: flex;
+  justify-content: left;
+  gap: 30px;
+  padding: 0 0 0 50px;
+}
+
+.storeSection .store_set ul li {
+  background: #fff;
+  flex: 1;
+  border-radius: 24px;
+  box-shadow: 0px 8px 24px rgb(0 0 0 / 8%);
+  transition: 0.5s;
+}
+
+.storeSection .store_set ul li:hover {
+  transform: translateY(-20px);
+  box-shadow: 0px 8px 24px yellow;
+}
+
+.storeSection .store_set ul li b {
+  display: block;
+  padding: 0 0 30px 30px;
+  word-break: keep-all;
+}
+
+.storeSection .store_set ul li .itms img {
+  width: 300px;
+  margin: 0 0 0 30px;
+}
+
+.storeSection .store_set ul li .top1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.storeSection .store_set ul li .top1 h3 {
+  line-height: 30px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.storeSection .store_set ul li .top1 a {
+  width: 30px;
+}
+.storeSection .store_set ul li .top2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.storeSection .store_set ul li .top2 h3 {
+  line-height: 30px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.storeSection .store_set ul li .top2 a {
+  width: 30px;
+}
+
+.storeSection .store_set ul li .top3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.storeSection .store_set ul li .top3 h3 {
+  line-height: 30px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.storeSection .store_set ul li .top3 a {
+  width: 30px;
+}
+
+.map_section {
+  padding: 120px 0;
+}
+
+.map_section .map_inner {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.map_section .map_inner .left {
+  position: relative;
+  padding: 50px 0;
+}
+
+.map_section .map_inner .left h3 {
+  font-size: 35px;
+  font-weight: 600;
+  padding: 55px 0 20px 0;
+}
+
+.map_section .map_inner .left input {
+  border: 3px solid #f9bb00;
+  border-radius: 0 0 0 30px;
+  padding: 20px 300px 20px 30px;
+  font-size: 25px;
+}
+
+.map_section .map_inner .left img {
+  position: absolute;
+  top: 170px;
+  right: 10px;
+  width: 50px;
+}
+
+.map_section .map_inner .left ul {
+  display: flex;
+  width: 600px;
+  justify-content: space-around;
+  padding: 20px 0 0 0;
+}
+
+.map_section .map_inner .left ul li {
+  background: #ddd;
+  padding: 8px;
+  border-radius: 24px;
+}
+
+.map_section .map_inner .right {
+  position: relative;
+  background: url(../img/idea5.png) no-repeat center center / cover;
+  width: 450px;
+}
+
+.map_section .map_inner .right img {
+  position: absolute;
+  top: 180px;
+  left: 200px;
+  animation: handling 1.5s infinite ease;
+}
+
+.app_section {
+  padding: 80px 0;
+  background-color: #ddd;
+  width: 1600px;
+  border-radius: 0 150px 150px 0;
+}
+
+.app_section .app_inner {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+  justify-content: space-around;
+}
+
+.app_section .app_inner img {
+  width: 650px;
+}
+
+.app_section .app_right h3 {
+  display: block;
+  font-size: 35px;
+  font-weight: 600;
+  color: #f9bb00;
+  padding: 130px 0 35px 0;
+  text-align: center;
+}
+
+.app_section .app_right p {
+  display: block;
+  font-size: 55px;
+  font-weight: 600;
+  color: #333;
+  padding: 0px 0px 25px 0;
+  text-align: center;
+}
+
+.app_section .app_right strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  padding: 0px 0px 70px 0;
+  text-align: center;
+}
+
+.app_section .app_right strong a {
+  background: #f9bb00;
+  border-radius: 30px;
+}
+
+.app_section .app_right b {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 0 35px 0;
+  transition: 0.3s;
+}
+
+.app_section .app_right b a {
+  background: #f9bb00;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.app_section .app_right b img {
+  width: 20px;
+}
+
+.app_section .app_right b:hover {
+  transform: scale(1.2);
+}
+
+.app_section .app_right span {
+  display: block;
+  font-size: 16px;
+  text-align: center;
 }

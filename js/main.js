@@ -27,7 +27,7 @@ $(function () {
     pauseOnHover: false,
     pauseOnFocus: false,
     autoplay: true,
-    slidesToShow: 5,
+    slidesToShow: 4,
   });
 
   $(".content_slide .second_itm").slick({
@@ -36,16 +36,30 @@ $(function () {
     pauseOnHover: false,
     pauseOnFocus: false,
     autoplay: true,
+    slidesToShow: 4,
+  });
+
+  $(".content_slide .third_itm").slick({
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    autoplay: false,
     slidesToShow: 5,
   });
 
   $(".one").on("click", function () {
-    $(".second_itm").addClass("hidden");
+    $(".second_itm, .third_itm").addClass("hidden");
     $(".first_itm").removeClass("hidden");
   });
 
   $(".two").on("click", function () {
-    $(".first_itm").addClass("hidden");
+    $(".first_itm, .third_itm").addClass("hidden");
     $(".second_itm").removeClass("hidden");
+  });
+
+  $(".three").on("click", function () {
+    $(".first_itm, .second_itm").addClass("hidden");
+    $(".third_itm").removeClass("hidden");
   });
 });
