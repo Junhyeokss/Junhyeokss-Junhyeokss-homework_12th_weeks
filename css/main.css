@@ -477,7 +477,7 @@ header .inner ul {
 .app_section {
   padding: 80px 0;
   background-color: #ddd;
-  width: 1600px;
+  width: 1550px;
   border-radius: 0 150px 150px 0;
 }
 
@@ -533,22 +533,90 @@ header .inner ul {
   transition: 0.3s;
 }
 
+.app_section .app_right b:hover {
+  transform: scale(0.92);
+}
+
 .app_section .app_right b a {
   background: #f9bb00;
   padding: 15px;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .app_section .app_right b img {
   width: 20px;
 }
 
-.app_section .app_right b:hover {
-  transform: scale(1.2);
-}
-
 .app_section .app_right span {
   display: block;
   font-size: 16px;
   text-align: center;
+}
+
+.storySection {
+  padding: 100px 0;
+}
+
+.storySection .story_inner {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.storySection .story_inner .left {
+}
+
+.storySection .story_inner .left h3 {
+  font-size: 55px;
+  font-weight: 400;
+}
+
+.storySection .story_inner .left p {
+  font-size: 40px;
+  font-weight: 700;
+  color: #333;
+  line-height: 60px;
+}
+
+.storySection .story_inner .left b {
+  display: block;
+  color: #fece6a;
+  font-weight: 600;
+  padding: 0 0 30px 0;
+}
+
+.storySection .story_inner .left ul {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.storySection .story_inner .right {
+  display: flex;
+  width: 900px;
+  gap: 30px;
+}
+
+.storySection .story_inner .right .first_desc {
+  border-radius: 40px 40px 40px 0;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.storySection .story_inner .right .first_desc:hover {
+  box-shadow: 0px 8px 5px #f9bb00;
+}
+
+.storySection .story_inner .right .first_desc img {
+  transition: 0.2s;
+}
+
+.storySection .story_inner .right .first_desc:hover img {
+  transform: scale(1.2);
+}
+
+.storySection .story_inner .right .scd_itm {
+  margin: 100px 0 0 0;
 }
